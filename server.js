@@ -1,6 +1,7 @@
 // DEPENDENCIES
 const express = require('express');
 const app = express();
+app.use(express.static(__dirname + '/css'))
 
 // run `npm install` to install dependencies in package.json
 
