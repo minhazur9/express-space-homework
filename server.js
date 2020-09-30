@@ -33,7 +33,7 @@ app.set('view engine','ejs');
 // display the mission names as <li> in a <ul> with the class name "missions"
 
 app.get('/', (request,response) => {
-  response.send('<h1>Welcome to Mars Missions</h1>');
+  response.render('home');
 })
 
 const missionCtrl = require('./controllers/missionController');

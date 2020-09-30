@@ -6,9 +6,11 @@
     <title>Mission</title>
 </head>
 <body>
+    <%- include('../partials/nav.ejs') %> 
     <h4>Name: <%= mission.name %></h4>
     <h4>Launch Date: <%= mission.launchDate %></h4>
     <h4>Operator: <%= mission.operator %></h4>
     <h4>Mission Type: <%= mission.missionType %></h4>
+    <img src=<%= mission.img %>  alt=<%= mission.type %>>
 </body>
 </html>
