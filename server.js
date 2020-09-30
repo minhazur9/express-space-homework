@@ -32,12 +32,11 @@ app.set('view engine','ejs');
 // the view should display just the names of each mission
 // display the mission names as <li> in a <ul> with the class name "missions"
 
-const missionCtrl = require('./controllers/missionController');
-const marsMissions = require('./models/marsMissions');
+app.get('/', (request,response) => {
+  response.send('<h1>Welcome to Mars Missions</h1>');
+})
 
-app.get('/',(request,response) => {
-  response.render('index');
-});
+const missionCtrl = require('./controllers/missionController');
 
 app.use('/missions',missionCtrl);
 
